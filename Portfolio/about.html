@@ -1,0 +1,216 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>About Page</title>
+  </head>
+
+  <style>
+    @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500&display=swap");
+
+    * {
+      margin: 0;
+      padding: 0;
+      outline: 0;
+      font-family: "Poppins", sans-serif;
+      box-sizing: border-box;
+      scroll-behavior: smooth;
+    }
+
+    .container {
+      height: 100vh;
+      width: 100%;
+      position: relative;
+      background: rgb(21, 22, 99);
+      background-size: cover;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      overflow: hidden;
+    }
+
+    .container::before {
+      content: "";
+      position: absolute;
+      height: 330px;
+      width: 330px;
+      border-radius: 50%;
+      background: linear-gradient(#074234, #e7b0de);
+      transform: translate(-490px, -150px);
+    }
+
+    .container::after {
+      content: "";
+      position: absolute;
+      height: 300px;
+      width: 300px;
+      border-radius: 50%;
+      background: linear-gradient(#97883a, #fc002e);
+      transform: translate(490px, 170px);
+    }
+
+    .container {
+      height: 100vh;
+      width: 100%;
+      position: relative;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+
+    .ball-1 {
+      content: "";
+      position: absolute;
+      height: 30px;
+      width: 50px;
+      border-radius: 50%;
+      background: linear-gradient(#0919f8, #14ff14);
+      transform: translate(150px, 150px);
+    }
+
+    .ball-2 {
+      content: "";
+      position: absolute;
+      height: 30px;
+      width: 50px;
+      border-radius: 50%;
+      background: linear-gradient(#eeff00, #f30303);
+      transform: translate(250px, -150px);
+    }
+
+    .ball-3 {
+      content: "";
+      position: absolute;
+      height: 30px;
+      width: 50px;
+      border-radius: 50%;
+      background: linear-gradient(#09f5ba, #ff0000);
+      transform: translate(-240px, -60px);
+    }
+
+    .container .box {
+      height: 85vh;
+      width: 75%;
+      padding: 0, 20px;
+      background: rgba(255, 255, 255, 0);
+      z-index: 10;
+      display: flex;
+      position: relative;
+      border-radius: 20px;
+      border: 2px solid rgba(255, 255, 255, 1);
+      backdrop-filter: blur(25px);
+    }
+
+    .container .box .contains {
+      width: 100%;
+      height: 100vh;
+    }
+
+    .container .box .contains .section-1 h1 {
+      font-size: 35px;
+      color: #ff0000;
+      margin-top: 30px;
+      margin-left: 230px;
+    }
+
+    .section-1 {
+      display: flex;
+      margin: auto;
+      padding: 30px;
+      align-items: center;
+      justify-content: space-between;
+    }
+
+    ul li{
+      list-style: none;
+      display: inline-block;
+      padding: 10px 0px;
+      margin-top: 10px;
+      margin-right: 80px;
+    }
+
+    ul li a{
+      font-size: 16px;
+      font-weight: bold;
+      text-decoration: none;
+      color: rgb(255, 255, 255);
+    }
+
+    .detail {
+      margin-top: 70px;
+      position: absolute;
+      display: flex;
+       align-items: center;
+       justify-content: space-between;
+    }
+
+    .detail p{
+      font-size: 20px;
+      margin-left: 100px ;
+      margin-bottom: 100px;
+      width: 500px;
+     height: auto;
+     text-align: justify;
+     color: rgb(255, 255, 255);
+    }
+
+    .detail .picture img{
+      width: 400px;
+      margin-left: 100px;
+      transform: translateY(-10%);
+      border-radius: 50%;
+      background-color: rgba(255, 255, 255, 0.452);
+    }
+    
+    a:hover {
+      color: red;
+      transition: 0.3s ease-in-out;
+    }
+
+    span {
+      color: rgb(255, 0, 0);
+    }
+  </style>
+  <body>
+    <!--About Page-->
+
+    <div class="container">
+      <div class="ball-1"></div>
+      <div class="ball-2"></div>
+      <div class="ball-3"></div>
+
+      <div class="box">
+        <div class="contains">
+
+          <div class="section-1">
+            <h1>ABOUT ME</h1>
+            <nav>
+              <ul>
+                <li><a href="index.html">HOME</a></li>
+                <li><a href="about.html">ABOUT</a></li>
+                <li><a href="contact.html">CONTACT</a></li>
+              </ul>
+            </nav>
+
+            
+            </div>
+            
+              <div class="detail">
+                <p>
+                  Hello! <span>Kyle Daniel Santos</span>, a second-year college student
+                  pursuing a degree in Information Technology. I'm passionate
+                  about all things tech and aspire to make a meaningful impact in
+                  the world of IT. I believe that technology is a powerful tool
+                  for positive change and that, with the right skills and
+                  knowledge, we can shape the future in incredible ways.
+                </p>
+                <div class="picture">
+                  <img src="images/1.png" alt="">
+                </div>
+              </div>
+
+        </div>
+      </div>
+  </body>
+</html>
